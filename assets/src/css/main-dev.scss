@@ -1,0 +1,128 @@
+/******************
+**** Variables ****
+******************/
+$font_size_h1: 3rem;
+$primary_color: #393b43;
+$secondary_color: #454851;
+$tertiary_color: #606168;
+
+/****************
+**** Imports ****
+****************/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap'); // Lato Fonts from google fonts
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "~bootstrap/dist/css/bootstrap-grid.min";
+@import "components/nav-bar.scss";
+@import "components/searchform.scss";
+@import "components/forms.scss";
+@import "pages/home.scss";
+
+/******************************
+**** Normalize and General ****
+*******************************/
+html {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 !important;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: $font_size_h1;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/** General  **/
+header.site-header {
+    .header-top {
+        background-color: $primary_color;
+        padding: .5rem 0;
+        & * { line-height: normal; }
+        .social-media-wa {
+            float: right;
+            ul, ul * { list-style: none; }
+            li { display:  inline-block; }
+            a { 
+                display: inline-block;
+                font-size: 24px;
+                color: #fff;
+                padding-left: 20px;
+                margin-top: -2px;
+            }
+        }
+        .searchform { float: right; }
+    }
+    .header-bottom {
+        background-color: $secondary_color;
+        .logo-text, .custom-logo-link { 
+            float: left;
+            padding: .5rem 0;
+            padding-right: .65rem;
+        }
+        .logo-text {
+            padding-top: 1.4rem;
+            text-align: center;
+            color: #fff;
+            p { font-size: 1.65rem; }
+            span { font-size: .95rem; }
+            &, & * { line-height: normal; } 
+        }
+        .main-menu {
+            padding-top: 2.5rem;
+            text-align: right;
+            a { font-size: 1.12rem; }
+        }
+    }
+}
+
+footer.site-footer {
+    color: #fff;
+    background-color: $secondary_color;
+    padding: 1rem 0; 
+    h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .footer-left {
+        border-right: 1px solid $tertiary_color;
+        padding-right: 1.4rem;
+        input, textarea {
+            color: #fff;
+            background-color: $primary_color;
+        }
+        input[type="submit"] { float: right; }
+    }
+    .footer-right {
+        padding-left: 1.4rem;
+        p { margin-bottom: 1.5rem; }
+        .social-media-wa {
+            ul, ul * { list-style: none; }
+            li { 
+                margin-bottom: 1.5rem;
+                i { 
+                    float: left;
+                    margin-right: .75rem; 
+                    font-size: 24px;
+                } 
+            }
+        }
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/**************************
+**** Global Responsive ****
+**************************/

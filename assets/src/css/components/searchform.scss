@@ -1,0 +1,23 @@
+.searchform {
+    input[type="text"] {
+        background-color: $tertiary_color;
+        border-radius: 4px;
+        border: none;
+        font-size: .95rem;
+        padding: .3rem;
+        padding-right: 25px;
+        color: #fff;
+    }
+    & > p { position: relative; }
+    button { 
+        position: absolute;
+        right: 0;
+        top: calc(50% - 22px/2);
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        padding-right: 5px;
+        font-size: 1.12rem;
+        outline: none;
+    }
+}

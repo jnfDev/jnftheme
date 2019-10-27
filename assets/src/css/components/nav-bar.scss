@@ -1,0 +1,26 @@
+.nav-bar {
+    li {
+        padding: 0 .6rem;
+        display: inline-block;
+        &:first-child { padding-left: 0; }
+        &:last-child { padding-right: 0; }
+        a {
+            color: #fff; 
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        &.current-menu-item a {
+            background-color: $tertiary_color;
+            padding: .15rem .4rem;
+            border-radius: 8%;
+        }
+        &:not(.current-menu-item) > a:hover,
+        &:not(.current-menu-item) > a:focus {
+            color: #d4d4d4;
+        }
+    }
+    &,
+    & * {
+        list-style: none;
+    }
+}

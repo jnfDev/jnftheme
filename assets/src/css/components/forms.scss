@@ -1,0 +1,25 @@
+.form {
+    .form-group { 
+        display: block;
+        margin-bottom: 1rem; 
+    }
+    input, textarea, button {
+        border: 1px solid $tertiary_color;
+        border-radius: 4px;
+    }
+    textarea { 
+        resize: none;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: .35rem;
+    }
+    button, input[type="submit"] {
+        padding: .45rem .95rem .35rem .95rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}

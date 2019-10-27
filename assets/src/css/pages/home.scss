@@ -1,0 +1,30 @@
+.about-me {
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: #f1f3f7ff;
+    h1 {
+        color: $secondary_color;
+    }
+    p { font-size: 18px; }
+    & > .container > p {
+        font-weight: 300;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .foundations {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin: 3rem 0;
+        .a-foundation {
+            p { margin-top: .5rem; }
+            i { font-size: 3rem; }
+            color: $secondary_color;
+        }
+    }
+}
+
+
+/*******************
+**** Responsive ****
+********************/
