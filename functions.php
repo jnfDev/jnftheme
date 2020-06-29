@@ -7,6 +7,7 @@ add_action( 'after_setup_theme', function() {
         'height' => 80,
     );
     add_theme_support( 'custom-logo', $defaults );
+    add_theme_support( 'post-thumbnails' );
 });
 
 // Includes
